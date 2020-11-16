@@ -1,0 +1,15 @@
+[debug] Packaging C:\Users\Mettle\ChiselProjects\chisel-template\target\scala-2.12\chisel-module-template_2.12-3.3.0.jar ...
+[debug] Input file mappings:
+[debug] 	acc_proc
+[debug] 	  C:\Users\Mettle\ChiselProjects\chisel-template\target\scala-2.12\classes\acc_proc
+[debug] 	acc_proc\ACC_PROC$$anon$1.class
+[debug] 	  C:\Users\Mettle\ChiselProjects\chisel-template\target\scala-2.12\classes\acc_proc\ACC_PROC$$anon$1.class
+[debug] 	acc_proc\ACC_PROC.class
+[debug] 	  C:\Users\Mettle\ChiselProjects\chisel-template\target\scala-2.12\classes\acc_proc\ACC_PROC.class
+[debug] 	acc_proc\shared
+[debug] 	  C:\Users\Mettle\ChiselProjects\chisel-template\target\scala-2.12\classes\acc_proc\shared
+[debug] 	acc_proc\shared\Constants$.class
+[debug] 	  C:\Users\Mettle\ChiselProjects\chisel-template\target\scala-2.12\classes\acc_proc\shared\Constants$.class
+[debug] 	acc_proc\shared\Constants.class
+[debug] 	  C:\Users\Mettle\ChiselProjects\chisel-template\target\scala-2.12\classes\acc_proc\shared\Constants.class
+[debug] Done packaging.

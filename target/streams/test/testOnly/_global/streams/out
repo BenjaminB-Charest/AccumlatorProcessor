@@ -1,0 +1,11 @@
+[debug] Running TaskDef(gcd.GCDTester, org.scalatest.tools.Framework$$anon$1@600d07cb, false, [SuiteSelector])
+[debug] Summary for ScalaCheck not available.
+[info] ScalaTest
+[info] Run completed in 1 second, 610 milliseconds.
+[info] Total number of tests run: 1
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[info] Passed: Total 1, Failed 0, Errors 0, Passed 1
+[debug] Passed tests:
+[debug] 	gcd.GCDTester

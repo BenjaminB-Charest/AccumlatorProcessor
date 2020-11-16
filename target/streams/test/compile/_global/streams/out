@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mettle\ChiselProjects\chisel-template\src\test\scala\acc_proc\ACC_PROC_MAIN.scala:51:1: Unmatched closing brace '}' ignored here[0m
+[0m[[0m[31merror[0m] [0m[0m}*/[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mettle\ChiselProjects\chisel-template\src\test\scala\acc_proc\ACC_PROC_MAIN.scala:51:2: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m}*/[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
