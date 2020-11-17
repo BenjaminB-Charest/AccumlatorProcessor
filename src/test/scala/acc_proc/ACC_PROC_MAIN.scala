@@ -3,6 +3,7 @@
 package acc_proc
 
 import chisel3.iotesters
+import org.scalatest._
 import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
 
 /**
@@ -44,8 +45,9 @@ class AccProcTester(processor: AccProc) {
   * test:runMain gcd.GCDRepl --help
   * }}}
   */
-/*object AccProcDriver extends App { // Can't test using IOTesters since this process happens without input or output value. 
-  iotesters.Driver.execute(args, () => new AccProc){
-    c => new AccProcTester(c)
-  }
-} */
+object AccProcDriver extends FlatSpec with Matchers {  
+  iotesters.Driver.execute(Arrat("--generate-vcd-output", "on"), () => 
+  new AccProc()){c => 
+    new AccProcTester(c)
+  } should be (true)
+}

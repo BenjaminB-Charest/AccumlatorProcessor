@@ -5,12 +5,17 @@ import chisel3.util._
 import acc_proc_shared._
 
 
-class AccProc {
+class AccProc extends Module{
+      val io = IO(new Bundle {
+            val addr = Input(UInt(8.W))
+            val ir = Input(UInt(3.W))
+      })
       var pc = Wire(RegInit(0.U(16.W)))  // Signal PC uint16
       var acc = Wire(RegInit(0.U(16.W))) // Signal ACC uint16
       var state = Wire(RegInit(State.fetch))
       val memoryRegister = SyncReadMem(256, UInt(16.W)) // Initialise les 256 registre possible initalises a valeur 0
       var ir = new Instruction(0.U)
+
       
       switch(state){
             is(State.fetch){
@@ -29,7 +34,7 @@ class AccProc {
                         is(Operation.ld){
                               acc := RegNext(memoryRegister(ir.io.addr))
                         }
-                        is(Operation.st){ // Line 31 does not necessarily work. 
+                        is(Operation.st){ // Line 31 does not necessarily work until we use simulate
                               memoryRegister(ir.io.addr).apply(acc) 
                         }
                   }
