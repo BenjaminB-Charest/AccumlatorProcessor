@@ -1,7 +1,0 @@
-[info] GCDTester:
-[info] GCD
-[info] Basic test using Driver.execute
-[info] - should be used as an alternative way to run specification
-[info] running with --is-verbose
-[info] running with --generate-vcd-output on
-[info] running with --generate-vcd-output off

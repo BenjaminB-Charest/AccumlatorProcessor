@@ -3,6 +3,7 @@
 package acc_proc
 
 import chisel3.iotesters
+import org.scalatest._
 import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
 
 /**
@@ -24,7 +25,7 @@ import chisel3.iotesters.{ChiselFlatSpec, Driver, PeekPokeTester}
   * sbt 'test:runMain gcd.GCDMain --backend-name verilator'
   * }}}
   */
-class AccProcTester(processor: AccProc) {
+class AccProcTester(processor: AccProc) extends PeekPokeTester(processor) {
   var run = true
   var maxCycles = 100
 } 
@@ -44,8 +45,9 @@ class AccProcTester(processor: AccProc) {
   * test:runMain gcd.GCDRepl --help
   * }}}
   */
-/*object AccProcDriver extends App { // Can't test using IOTesters since this process happens without input or output value. 
-  iotesters.Driver.execute(args, () => new AccProc){
-    c => new AccProcTester(c)
-  }
-} */
+object AccProcDriver extends FlatSpec with Matchers { // Page 30 Chisel-book
+  iotesters.Driver.execute(Array("--generate-vcd-output","on"),() => 
+      new AccProc()) {c => 
+    new AccProcTester(c)
+  } should be (true)
+} 

@@ -1,7 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Mettle\ChiselProjects\chisel-template\src\test\scala\acc_proc\ACC_PROC_MAIN.scala:51:1: Unmatched closing brace '}' ignored here[0m
-[0m[[0m[31merror[0m] [0m[0m}*/[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Mettle\ChiselProjects\chisel-template\src\test\scala\acc_proc\ACC_PROC_MAIN.scala:51:2: expected class or object definition[0m
-[0m[[0m[31merror[0m] [0m[0m}*/[0m
-[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mettle\ChiselProjects\chisel-template\src\test\scala\acc_proc\ACC_PROC_MAIN.scala:28:49: not enough arguments for constructor PeekPokeTester: (dut: T, base: Int, logFile: Option[java.io.File])chisel3.iotesters.PeekPokeTester[T].[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter dut.[0m
+[0m[[0m[31merror[0m] [0m[0mclass AccProcTester(processor: AccProc) extends PeekPokeTester() {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mettle\ChiselProjects\chisel-template\src\test\scala\acc_proc\ACC_PROC_MAIN.scala:51:5: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : acc_proc.AccProcTester[0m
+[0m[[0m[31merror[0m] [0m[0m required: chisel3.iotesters.PeekPokeTester[acc_proc.AccProc][0m
+[0m[[0m[31merror[0m] [0m[0m    new AccProcTester(c)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
